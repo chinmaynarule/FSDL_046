@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 3 - Simple Form</title>
+</head>
+<body>
+
+<h2>Simple Form</h2>
+
+<form id="myForm">
+    Name: <input type="text" id="name"><br><br>
+    Email: <input type="email" id="email"><br><br>
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<p id="output"></p>
+
+<script>
+function submitForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+
+    document.getElementById("output").innerHTML =
+        "Name: " + name + "<br>Email: " + email;
+}
+</script>
+
+</body>
+</html>
